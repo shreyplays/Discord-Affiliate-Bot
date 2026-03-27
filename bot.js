@@ -75,5 +75,9 @@ client.on("messageCreate", async (message) => {
 
   await message.reply(reply);
 });
-
+client.login(DISCORD_TOKEN).catch(err => {
+  console.error("Login failed:", err);
+});
 client.login(DISCORD_TOKEN);
+process.on("unhandledRejection", console.error);
+process.on("uncaughtException", console.error);
