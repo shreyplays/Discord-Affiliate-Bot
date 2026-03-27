@@ -8,7 +8,7 @@ const { Client, GatewayIntentBits } = require("discord.js");
 //          Get it from: discord.com/developers/applications
 //          → Your App → Bot → Reset Token → Copy
 // ============================================================
-const DISCORD_TOKEN = "PASTE_YOUR_NEW_TOKEN_HERE";
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 
 // ✅ Your affiliate tag is already set — no changes needed here
 const AFFILIATE_TAG = "shrey13-21";
